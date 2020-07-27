@@ -1,0 +1,41 @@
+.header {
+  background: #ffffff;
+  display: flex;
+  .logoWrap {
+    display: block;
+    .logo {
+      width: 64px;
+      height: 100%;
+      margin-right: 40px;
+      background-image: url(~@/assets/logo.png);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .tabs {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  html {
+    .header {
+      .logoWrap {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+
+        .logo {
+          margin-right: 0;
+          width: 160px;
+          height: 100%;
+          background-image: url(~@/assets/loggo.png);
+        }
+      }
+      .tabs {
+        display: none;
+      }
+    }
+  }
+}
